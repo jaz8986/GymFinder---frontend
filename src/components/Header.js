@@ -1,9 +1,8 @@
-import Logo from '../Logo.png'
 
 function Header() {
     return (
         <div>
-            <img class="ui fluid image" src={Logo} />
+            {/* <img class="ui fluid image" src={} /> */}
         </div>
     ) 
 }
