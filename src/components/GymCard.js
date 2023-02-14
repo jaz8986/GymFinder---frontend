@@ -1,4 +1,4 @@
-import { Card, Image } from 'semantic-ui-react'
+import { Card, Image, Button } from 'semantic-ui-react'
 import React from'react'
 
 function GymCard({name, address, image, rating}) {
@@ -16,6 +16,7 @@ function GymCard({name, address, image, rating}) {
             {address}
           </Card.Description>
         </Card.Content>
+        <Button>Sign Up</Button>
       </Card>
     ) 
 }

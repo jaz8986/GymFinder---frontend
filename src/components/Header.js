@@ -1,8 +1,9 @@
+import logo from '../assets/logo.png'
 
 function Header() {
     return (
         <div>
-            {/* <img class="ui fluid image" src={} /> */}
+            <img style={{border: "1px"}} src={logo} alt="gymfinder logo" /> 
         </div>
     ) 
 }
