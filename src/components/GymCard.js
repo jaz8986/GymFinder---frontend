@@ -1,17 +1,19 @@
-import { Card, CardContent, Icon, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
+import React from'react'
 
-function GymCard() {
+function GymCard({name, address, image, rating}) {
+
     return (
         <Card>
-        <Image src='' wrapped ui={true} />
+        <Image src={image} wrapped ui={true} />
         <Card.Content>
-          <Card.Header>Gym Name</Card.Header>
+          <Card.Header>{name}</Card.Header>
           <Card.Meta>
             <span className='rating'></span>
-            Rated: Rating
+            Rated: {rating}/5
           </Card.Meta>
           <Card.Description>
-            Address
+            {address}
           </Card.Description>
         </Card.Content>
       </Card>

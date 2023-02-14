@@ -1,8 +1,10 @@
+import Logo from '../Logo.png'
+
 function Header() {
     return (
-    <nav>
-        Header
-    </nav>
+        <div>
+            <img class="ui fluid image" src={Logo} />
+        </div>
     ) 
 }
 
