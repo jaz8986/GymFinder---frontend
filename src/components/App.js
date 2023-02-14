@@ -11,7 +11,7 @@ function App() {
       <Header/>
       <Switch>
         <Gyms/>
-      </Switch>
+      </Switch> 
         
     </div>
   );
