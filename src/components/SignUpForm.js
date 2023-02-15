@@ -1,13 +1,6 @@
 import {Grid, Checkbox} from 'semantic-ui-react'
 
 function SignUpForm () {
-    // gym name - set by the click
-    // select tier
-    // name
-    // email
-    // phone
-    // attached members - not required
-
     return (
         <div>
             <Grid>
@@ -46,7 +39,6 @@ function SignUpForm () {
                                         <input type="text" placeholder="Gym" />
                                     </div>
                                 </div>
-                                {/* add attached members here. checkbox that if true returns a attached member form below */}
                         </form>
                     </Grid.Column>
                 <Grid.Column width={2}></Grid.Column>

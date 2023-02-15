@@ -11,7 +11,15 @@ function ViewMemberships () {
             .then(setMemberships)
     },[])
 
-    const membersRows = memberships.map((m) => <MembershipRows key={m.id} gym={m.gym} tier={m.tier} name={m.name} email={m.email} phone={m.phone} attached_member={m.attached_member} />)
+    function deleteMembership (id) {
+        fetch(`/memberships/${id}`, { method: 'DELETE' })
+        .then(res => res.json())
+        .then(() => setMemberships(memberships))
+    }
+
+    const 
+     
+    const membersRows = memberships.map((m) => <MembershipRows id={m.id} gym={m.gym} tier={m.tier} name={m.name} email={m.email} phone={m.phone} attached_member={m.attached_member} deleteMembership={deleteMembership}/>)
     console.log(memberships)
     return (
         <div style={{color: "white", textAlign: "center"}}>

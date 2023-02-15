@@ -1,8 +1,5 @@
-function MembershipRows({gym, tier, name, email, phone, attached_member}) {
+function MembershipRows({id, gym, tier, name, email, phone, attached_member, deleteMembership}) {
 
-  function deleteMembership () {
-    
-  }
 
     return (
       <tr className="table-row">
@@ -12,7 +9,7 @@ function MembershipRows({gym, tier, name, email, phone, attached_member}) {
           <td className="email">{email}</td>
           <td className="phone">{phone}</td>
           <td className="additional-members">{attached_member}</td>
-          <button type="submit" onClick={deleteMembership}><i class="trash icon"></i></button>
+          <button onClick={()=> deleteMembership(id)}><i class="trash icon"></i></button>
       </tr>
     )
   }

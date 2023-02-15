@@ -14,19 +14,19 @@ function App() {
       <Header/> 
       <Switch>
 
-        <Route path= "/gyms" >
+        <Route exact path= "/gyms" >
           <Gyms/>
         </Route>
 
-        <Route path= "/memberships">
+        <Route exact path= "/memberships">
           <ViewMemberships/>
         </Route>
 
-        <Route path= "gyms/:id/memberships/new">
+        <Route path= "/memberships/new">
           <SignUpForm/>
         </Route>
 
-        <Route path= "membership/edit">
+        <Route path= "/memberships/edit">
           <EditMembership/>
         </Route>
 
