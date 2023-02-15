@@ -1,4 +1,5 @@
 import logo from '../assets/logo.png'
+import header from '../assets/header.png'
 import { Grid, GridColumn } from 'semantic-ui-react'
 
 function Header() {
@@ -6,13 +7,15 @@ function Header() {
         <Grid>
             <Grid.Row>
                 <GridColumn width={2}>           
-                    <img style={{width:'300%'}} src={logo} alt="gymfinder logo" />
+                    <img src={logo} alt="gymfinder logo" />
                 </GridColumn>
-                <GridColumn width={10}>
-                    <div style={{display: 'flex', justifyContent: "center", alignItems: "center", color: "whitesmoke"}}>Gym Finder</div>
+                <GridColumn style={{display: 'flex', alignItems: "center", justifyContent: "center"}} width={10}>
+                    <img src={header} alt="header"/>
                 </GridColumn>
-                <GridColumn width={1}>
-                    <div style={{color: "whitesmoke"}}>Login</div>
+                <GridColumn width={2}>
+                    <div style={{display: 'flex', alignItems: "right", justifyContent:"right", color: "white"}}>
+                       <i class="user circle outline icon" ></i>
+                    </div>
                 </GridColumn>
             </Grid.Row>
         </Grid>

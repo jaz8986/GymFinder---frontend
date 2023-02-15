@@ -11,23 +11,23 @@ import { Switch, Route } from 'react-router-dom'
 function App() {
   return (
     <div style={{backgroundColor: "black"}} >
-        <Header/> 
+      <Header/> 
       <Switch>
 
         <Route path= "/gyms" >
           <Gyms/>
         </Route>
 
+        <Route path= "/memberships">
+          <ViewMemberships/>
+        </Route>
+
         <Route path= "gyms/:id/memberships/new">
           <SignUpForm/>
         </Route>
 
-        <Route path= "gyms/:id/membership/edit">
+        <Route path= "membership/edit">
           <EditMembership/>
-        </Route>
-
-        <Route path= "gyms/memberships">
-          <ViewMemberships/>
         </Route>
 
       </Switch>
