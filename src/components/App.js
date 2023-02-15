@@ -10,7 +10,7 @@ import { Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div style={{backgroundColor: }} >
+    <div style={{backgroundColor: "black"}} >
         <Header/> 
       <Switch>
 
