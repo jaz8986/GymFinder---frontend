@@ -1,7 +1,11 @@
-function MembershipRows({id, gym, tier, name, email, phone, attached_member, deleteMembership}) {
+import { Link } from 'react-router-dom'
+
+function MembershipRows({mID, gym, tier, name, email, phone, attached_member, deleteMembership}) {
 
 
-    return (
+  let path = `/memberships/${mID}/edit`
+
+  return (
       <tr className="table-row">
           <td className="gym">{gym}</td>
           <td className="tier">{tier}</td>
@@ -9,8 +13,10 @@ function MembershipRows({id, gym, tier, name, email, phone, attached_member, del
           <td className="email">{email}</td>
           <td className="phone">{phone}</td>
           <td className="additional-members">{attached_member}</td>
-          <button onClick={()=> deleteMembership(id)}><i class="trash icon"></i></button>
-          {/* <button onClick={()=> edit(id)}><i class="edit icon"></i></button> */}
+          <button onClick={()=> deleteMembership(mID)}><i class="trash icon"></i></button>
+          <Link to={path} >
+            <button type="button" ><i class="edit icon"></i></button>
+          </Link>
       </tr>
     )
   }

@@ -18,9 +18,14 @@ function Header() {
                 <GridColumn width={2}>
                     <div style={{display: 'flex', alignItems: "right", justifyContent:"right", color: "white"}}>
                         <Link to="/memberships">
-                            My Memberships
+                            Memberships
                         </Link>
-                    </div>
+                        </div>
+                </GridColumn>
+                <GridColumn width={2}>
+                    <Link to='/gyms/new'>
+                        Add A New Gym!
+                    </Link>
                 </GridColumn>
             </Grid.Row>
         </Grid>

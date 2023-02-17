@@ -1,5 +1,6 @@
 import { Grid, Button } from 'semantic-ui-react'
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 
 function SignUpForm ({ onFormSubmit }) {
@@ -17,6 +18,8 @@ function SignUpForm ({ onFormSubmit }) {
         setFormData({...formData, [e.target.name]: e.target.value})
     }
 
+    let history = useHistory();
+
     function handleSubmit (e) {
         e.preventDefault();
         fetch('/memberships', {
@@ -29,6 +32,7 @@ function SignUpForm ({ onFormSubmit }) {
         .then(res => res.json())
         .then(onFormSubmit)
         .then(setFormData(initialData))
+        history.push('/memberships')
     }
 
     // value={formData.tier}
