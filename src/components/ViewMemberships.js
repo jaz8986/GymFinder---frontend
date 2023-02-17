@@ -15,7 +15,7 @@ function ViewMemberships ({memberships, setMemberships}) {
     }
    
      
-    const membersRows = memberships.map((m) => <MembershipRows id={m.id} gym={m.gym} tier={m.tier} name={m.name} email={m.email} phone={m.phone} attached_member={m.attached_member} deleteMembership={deleteMembership}/>)
+    const membersRows = memberships.map((m) => <MembershipRows id={m.id} gym={m.gym_id} tier={m.tier_id} name={m.name} email={m.email} phone={m.phone} deleteMembership={deleteMembership}/>)
 
     return (
         <div style={{disply: "flex", justifyContent: "center", alignItems: "center" }}>
@@ -36,9 +36,6 @@ function ViewMemberships ({memberships, setMemberships}) {
                 </th>
                 <th>
                     <h3 className="phone">Phone Number</h3>
-                </th>
-                <th>
-                    <h3 className="attached-members">Additional Members</h3>
                 </th>
                 </tr>
                 {membersRows}

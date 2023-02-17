@@ -43,13 +43,13 @@ function SignUpForm ({ onFormSubmit }) {
                                 <div class="field">
                                     <label style={{color: "white"}} >Gym</label>
                                     <div class="ui input">
-                                        <input value={formData.gym_id} onChange={handleChange} name="gym_id" type="number" placeholder="Gym" />
+                                        <input value={formData.gym_id} onChange={handleChange} name="gym_id" type="text" placeholder="Gym" />
                                     </div>
                                 </div>
                                 <div class="field">
                                     <label style={{color: "white"}}>Tier</label>
                                     <div class="ui input">
-                                        <input value={formData.tier_id} onChange={handleChange} name="tier_id" type="number" placeholder="Tier" />
+                                        <input value={formData.tier_id} onChange={handleChange} name="tier_id" type="text" placeholder="Tier" />
                                     </div>
                                 </div>
                                 <div class="field">
