@@ -1,29 +1,25 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import MembershipRows from './MembershipRows'
 
-function ViewMemberships () {
+function ViewMemberships ({memberships, setMemberships}) {
     
-    const [memberships, setMemberships] = useState([])
-
-    useEffect(()=> {
-        fetch("/memberships")
-            .then(res => res.json())
-            .then(setMemberships)
-    },[])
 
     function deleteMembership (id) {
         fetch(`/memberships/${id}`, { method: 'DELETE' })
-        .then(res => res.json())
-        .then(() => setMemberships(memberships))
+        .then(() => handleDelete(id))
     }
 
-    const 
+    function handleDelete (id) {
+        const updated = memberships.filter((m) => m.id !== id);
+        setMemberships(updated)
+    }
+   
      
     const membersRows = memberships.map((m) => <MembershipRows id={m.id} gym={m.gym} tier={m.tier} name={m.name} email={m.email} phone={m.phone} attached_member={m.attached_member} deleteMembership={deleteMembership}/>)
-    console.log(memberships)
+
     return (
-        <div style={{color: "white", textAlign: "center"}}>
-            <table>
+        <div style={{disply: "flex", justifyContent: "center", alignItems: "center" }}>
+            <table style={{color: "white", textAlign: "center"}} >
             <tbody>
                 <tr>
                 <th>

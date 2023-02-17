@@ -10,6 +10,7 @@ function MembershipRows({id, gym, tier, name, email, phone, attached_member, del
           <td className="phone">{phone}</td>
           <td className="additional-members">{attached_member}</td>
           <button onClick={()=> deleteMembership(id)}><i class="trash icon"></i></button>
+          {/* <button onClick={()=> edit(id)}><i class="edit icon"></i></button> */}
       </tr>
     )
   }

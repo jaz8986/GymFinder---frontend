@@ -8,7 +8,7 @@ function Header() {
         <Grid>
             <Grid.Row>
                 <GridColumn width={2}>
-                    <Link to="/gyms">
+                    <Link to="/">
                         <img style={{width: "200px"}} src={logo} alt="gymfinder logo" />
                     </Link> 
                 </GridColumn>
