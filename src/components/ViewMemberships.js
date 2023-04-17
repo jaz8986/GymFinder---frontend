@@ -18,7 +18,7 @@ function ViewMemberships ({memberships, setMemberships}) {
     const membersRows = memberships.map((m) => <MembershipRows mID={m.id} gym={m.gym_id} tier={m.tier_id} name={m.name} email={m.email} phone={m.phone} deleteMembership={deleteMembership}/>)
 
     return (
-        <div style={{disply: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div style={{textAlign: "center"}}>
             <table style={{color: "white", textAlign: "center"}} >
             <tbody>
                 <tr>

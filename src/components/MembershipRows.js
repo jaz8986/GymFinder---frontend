@@ -6,7 +6,7 @@ function MembershipRows({mID, gym, tier, name, email, phone, attached_member, de
   let path = `/memberships/${mID}/edit`
 
   return (
-      <tr className="table-row">
+      <tr style={{textAlign: "center"}} className="table-row">
           <td className="gym">{gym}</td>
           <td className="tier">{tier}</td>
           <td className="name">{name}</td>

@@ -6,7 +6,7 @@ import SignUpForm from './SignUpForm'
 import EditMembership from './EditMembership'
 import ViewMemberships from './ViewMemberships'
 import AddANewGym from './AddANewGym'
-import { Switch, Route} from 'react-router-dom' 
+import { Switch, Route } from 'react-router-dom' 
 
 function App() {
 
