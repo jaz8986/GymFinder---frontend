@@ -1,6 +1,9 @@
 # GymFinder
 [Video Demo](https://www.youtube.com/watch?v=t0cUdAfFrwc)
 
+## Back End
+Make sure to clone down the [back end](https://github.com/jaz8986/GymFinder---backend) as well. 
+
 ## Description
 ### Current State
 Currently gym’s are manually added to the database and gym memberships can be added and edited from there. 
