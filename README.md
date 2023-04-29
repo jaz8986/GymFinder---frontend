@@ -16,4 +16,6 @@ Clone down repo then run:
 $ npm install
 $ npm start
 ```
+## Technologies
+Leveraged the React.js library as our primary frontend framework and integrated Sinatra as backend technology.
 
